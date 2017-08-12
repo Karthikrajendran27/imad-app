@@ -39,9 +39,9 @@ var articles = {
             heading: 'Article-Three',
             date: 'Sep 10, 2016',
             content:   
-                 <p>
+                 `<p>
                 This is the content of my third article. This is the content of my third article. This is the content of my third artic
-                </p>
+                </p>`
     }
 };
 
