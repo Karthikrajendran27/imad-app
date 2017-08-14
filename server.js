@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articles = {
     'article-one': {
-    title: "Article-one | Karthik Rajendran" ,
+    title: 'Article-one | Karthik Rajendran' ,
     heading: 'Article-one',
     date: 'Sep 5, 2016',
     content: `   <p>
