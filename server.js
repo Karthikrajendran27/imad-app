@@ -25,7 +25,7 @@ var articles = {
             
 },
     'article-two': {
-            title: 'Article-Two | Tanmai Gopal',
+            title: 'Article-Two | Karthik Rajendran',
             heading: 'Article-Two',
             date: 'Sep 10, 2016',
             content: 
@@ -35,7 +35,7 @@ var articles = {
         
     },
     'article-three': {
-        title: 'Article-three | Tanmai Gopal',
+        title: 'Article-three | Karthik Rajendran',
             heading: 'Article-Three',
             date: 'Sep 10, 2016',
             content:   
