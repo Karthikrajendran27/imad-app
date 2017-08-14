@@ -20,9 +20,9 @@ button.onclick = function () {
         //Not done yet
     };
         
-        //Make a Request
-        request.open('GET', 'http://krthkraj6.imad.hasura-app.io/counter', true);
-        request.send(null);
+    //Make a Request
+    request.open('GET', 'http://krthkraj6.imad.hasura-app.io/counter', true);
+    request.send(null);    
 
     
 };
