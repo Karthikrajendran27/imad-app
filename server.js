@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+/*
 var articles = {
     'article-one': {
     title: 'Article-one | Karthik Rajendran' ,
@@ -83,7 +83,7 @@ var htmlTemplate = `
 </html>`;
 return htmlTemplate;
 }
-
+*/
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -94,7 +94,7 @@ app.get('/counter', function (req, res){
    counter = counter + 1;
    res.send(counter.toString());
 });
-
+/*
 app.get('/:articleName', function (req, res) {
     //articleName == article-one
     //articles[articleName] == {} content object for article one
@@ -105,7 +105,7 @@ app.get('/:articleName', function (req, res) {
 app.get('/favicon.ico', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'favicon.ico'));
 });
-
+*/
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
