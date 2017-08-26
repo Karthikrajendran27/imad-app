@@ -131,7 +131,7 @@ app.get('/submit-name', function(req, res){ //URL: /submit-name/name=xxxxxxx
     
 });
 
-app.get('/:articleName', function (req, res) {
+app.get('articles/:articleName', function (req, res) {
     //articleName == article-one
     //articles[articleName] == {} content object for article one
     
@@ -143,7 +143,7 @@ app.get('/:articleName', function (req, res) {
                 res.status(404).send('Article not found');
             } else {
                 var articleData = result.rows[0];
-                res.send(JSON.stringify(articleData));
+                res.send(createTemplate(articleData));
             }
                 
             }
