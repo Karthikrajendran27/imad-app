@@ -148,9 +148,6 @@ app.get('articles/:articleName', function (req, res) {
                 
             }
         });
-    var articleData = 
-    
-    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/favicon.ico', function (req, res) {
