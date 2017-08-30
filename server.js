@@ -120,8 +120,6 @@ app.post('/login', function(req, res){
     });
 });
 
-    
-})
 
 
 var Pool = new Pool(config);
