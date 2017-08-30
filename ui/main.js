@@ -15,9 +15,9 @@ submit.onclick = function (){
                 console.log('user logged in');
                 alert('Logged in Successfully');
             } else if(requests.status === 403) {
-                console.log('Username/Password is incorrect');
+                alert('Username/Password is incorrect');
             } else if(request.status === 500) {
-                console.log('Something went wrong on the server');
+                alert('Something went wrong on the server');
                 
             }
         }
@@ -31,7 +31,7 @@ submit.onclick = function (){
     var password = document.getElementById('password').value;
     console.log(username);
     console.log(password);
-    request.open('POST', 'http://krthkraj6.imad.hasura-app.io/login'+name, true);
+    request.open('POST', 'http://krthkraj6.imad.hasura-app.io/login', true);
     request.setRequestHeader('Content-type', 'application/json');
     request.send(JSON.stringify({username: username, password: password})); 
        
